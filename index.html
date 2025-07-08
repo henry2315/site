@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Site do Henry</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .coluna {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 30px;
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .coluna:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bem-vindo ao meu site!</h1>
+
+  <div class="container">
+    <div class="coluna" onclick="window.location.href='pou.html'">
+      <h2>Coluna 1</h2>
+      <p>Clique para ver o Pou com uma surpresa!</p>
+    </div>
+
+    <div class="coluna" onclick="window.location.href='minhafoto.html'">
+      <h2>Coluna 2</h2>
+      <p>Clique para ver outra imagem com mais coisa!</p>
+    </div>
+  </div>
+
+</body>
+</html>
